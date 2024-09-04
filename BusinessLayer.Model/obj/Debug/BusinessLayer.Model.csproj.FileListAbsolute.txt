@@ -1,6 +1,0 @@
-C:\Users\ABC\Desktop\new_project\BusinessLayer.Model\bin\Debug\BusinessLayer.Model.dll
-C:\Users\ABC\Desktop\new_project\BusinessLayer.Model\bin\Debug\BusinessLayer.Model.pdb
-C:\Users\ABC\Desktop\new_project\BusinessLayer.Model\obj\Debug\BusinessLayer.Model.csproj.AssemblyReference.cache
-C:\Users\ABC\Desktop\new_project\BusinessLayer.Model\obj\Debug\BusinessLayer.Model.csproj.CoreCompileInputs.cache
-C:\Users\ABC\Desktop\new_project\BusinessLayer.Model\obj\Debug\BusinessLayer.Model.dll
-C:\Users\ABC\Desktop\new_project\BusinessLayer.Model\obj\Debug\BusinessLayer.Model.pdb
