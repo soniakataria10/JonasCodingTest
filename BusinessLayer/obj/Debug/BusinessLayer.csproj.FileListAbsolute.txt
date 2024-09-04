@@ -1,0 +1,14 @@
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\AutoMapper.dll
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\AutoMapper.pdb
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\System.ValueTuple.dll
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\BusinessLayer.Model.dll
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\DataAccessLayer.Model.dll
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\BusinessLayer.Model.pdb
+C:\Users\ABC\Desktop\new_project\BusinessLayer\bin\Debug\DataAccessLayer.Model.pdb
+C:\Users\ABC\Desktop\new_project\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\ABC\Desktop\new_project\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ABC\Desktop\new_project\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\ABC\Desktop\new_project\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\ABC\Desktop\new_project\BusinessLayer\obj\Debug\BusinessLayer.pdb

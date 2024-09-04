@@ -1,0 +1,48 @@
+2024-09-02 12:02:25,717 [13] ERROR WebApi.Controllers.EmployeeController - An error occurred while ading new employee.
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+=================================================================================
+AutoMapper created this type map for you, but your types cannot be mapped using the current configuration.
+EmployeeInfo -> Employee (Destination member list)
+BusinessLayer.Model.Models.EmployeeInfo -> DataAccessLayer.Model.Models.Employee (Destination member list)
+
+Unmapped properties:
+Occupation
+Phone
+LastModified
+Company
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps) in C:\projects\automapper\src\AutoMapper\ConfigurationValidator.cs:line 48
+   at lambda_method(Closure , EmployeeInfo , Employee , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 207
+   at BusinessLayer.Services.EmployeeService.SaveEmployee(EmployeeInfo EmployeeInfo) in C:\Users\ABC\Desktop\new_project\BusinessLayer\Services\EmployeeService.cs:line 61
+   at WebApi.Controllers.EmployeeController.Post(EmployeeDto value) in C:\Users\ABC\Desktop\new_project\WebApi\Controllers\EmployeeController.cs:line 62
+2024-09-02 12:04:20,559 [12] ERROR WebApi.Controllers.EmployeeController - An error occurred while ading new employee.
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+=================================================================================
+AutoMapper created this type map for you, but your types cannot be mapped using the current configuration.
+EmployeeInfo -> Employee (Destination member list)
+BusinessLayer.Model.Models.EmployeeInfo -> DataAccessLayer.Model.Models.Employee (Destination member list)
+
+Unmapped properties:
+Occupation
+Phone
+LastModified
+Company
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps) in C:\projects\automapper\src\AutoMapper\ConfigurationValidator.cs:line 48
+   at lambda_method(Closure , EmployeeInfo , Employee , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source) in C:\projects\automapper\src\AutoMapper\Mapper.cs:line 207
+   at BusinessLayer.Services.EmployeeService.SaveEmployee(EmployeeInfo EmployeeInfo) in C:\Users\ABC\Desktop\new_project\BusinessLayer\Services\EmployeeService.cs:line 61
+   at WebApi.Controllers.EmployeeController.Post(EmployeeDto value) in C:\Users\ABC\Desktop\new_project\WebApi\Controllers\EmployeeController.cs:line 62
+2024-09-02 14:37:41,673 [6] ERROR WebApi.Controllers.EmployeeController - An error occurred while retrieving employee detail.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BusinessLayer.Services.EmployeeService.GetEmployeeByCode(String EmployeeCode) in C:\Users\ABC\Desktop\new_project\BusinessLayer\Services\EmployeeService.cs:line 49
+   at WebApi.Controllers.EmployeeController.Get(String employeeCode) in C:\Users\ABC\Desktop\new_project\WebApi\Controllers\EmployeeController.cs:line 52

@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Web.Http;
 using AutoMapper;
 using BusinessLayer.Model.Interfaces;
+using BusinessLayer.Model.Models;
 using WebApi.Models;
+using log4net;
 
 namespace WebApi.Controllers
 {
     public class CompanyController : ApiController
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(CompanyController));
         private readonly ICompanyService _companyService;
         private readonly IMapper _mapper;
 
@@ -17,33 +21,73 @@ namespace WebApi.Controllers
             _companyService = companyService;
             _mapper = mapper;
         }
-        // GET api/<controller>
-        public IEnumerable<CompanyDto> GetAll()
+        public async Task<IEnumerable<CompanyDto>> GetAll()
         {
-            var items = _companyService.GetAllCompanies();
-            return _mapper.Map<IEnumerable<CompanyDto>>(items);
+            try
+            {
+                var items = await _companyService.GetAllCompanies();
+                return _mapper.Map<IEnumerable<CompanyDto>>(items);
+            }
+            catch (Exception ex)
+            {
+                log.Error("An error occurred while retrieving companies list.", ex);
+                return new List<CompanyDto>();
+            }
         }
 
-        // GET api/<controller>/5
-        public CompanyDto Get(string companyCode)
+        public async Task<CompanyDto> Get(string companyCode)
         {
-            var item = _companyService.GetCompanyByCode(companyCode);
-            return _mapper.Map<CompanyDto>(item);
+            try
+            {
+                var item = await _companyService.GetCompanyByCode(companyCode);
+                return _mapper.Map<CompanyDto>(item);
+            }
+            catch (Exception ex)
+            {
+                log.Error("An error occurred while retrieving employee detail.", ex);
+                return new CompanyDto();
+            }
         }
 
-        // POST api/<controller>
-        public void Post([FromBody]string value)
+        public async Task Post([FromBody]CompanyDto value)
         {
+            try
+            {
+                await _companyService.SaveCompany(_mapper.Map<CompanyInfo>(value));
+            }
+            catch (Exception ex)
+            {
+                log.Error("An error occurred while ading new company.", ex);
+            }
         }
 
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody] CompanyDto value)
         {
+            try
+            {
+                value.CompanyCode = id.ToString();
+                _companyService.SaveCompany(_mapper.Map<CompanyInfo>(value));
+            }
+            catch (Exception ex)
+            {
+                log.Error("An error occurred while updating company detail.", ex);
+            }
         }
 
-        // DELETE api/<controller>/5
-        public void Delete(int id)
+        public async Task Delete(string id)
         {
+            try
+            {
+                var record = await _companyService.GetCompanyByCode(id);
+                if (record != null)
+                {
+                    await _companyService.DeleteCompanyById(id);
+                }
+            }
+            catch (Exception ex)
+            {
+                log.Error("An error occurred while deleting company.", ex);
+            }
         }
     }
 }

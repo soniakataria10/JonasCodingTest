@@ -1,0 +1,9 @@
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\bin\Debug\DataAccessLayer.Model.dll
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\bin\Debug\DataAccessLayer.Model.pdb
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\ABC\Desktop\new_project\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
